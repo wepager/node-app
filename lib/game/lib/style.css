@@ -1,0 +1,234 @@
+* {
+    font-family: system-ui, sans-serif, Apple Color Emoji, Segoe UI, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: 400;
+    user-select: none;
+    -webkit-user-select: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    primary: hsl(47, 100%, 50%) hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+body {
+    font-size: 14px;
+    color: hsl(210, 12%, 16%);
+    background: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+
+x-body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background: hsl(47, 100%, 50%);
+    padding: 14px;
+    padding-bottom: 0;
+    font-size: 23px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 900;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 0 2px 34px 35px hsl(47, 100%, 50%);
+    position: relative;
+    z-index: 1;
+}
+
+h-right, h-left {
+    display: contents;
+}
+
+h-left {
+    font-family: monospace;
+    font-weight: 100;
+}
+
+h-right {}
+
+h-item {
+    display: flex;
+    align-items: center;
+}
+
+h-icon {
+    display: contents;
+}
+
+h-text {
+    text-transform: lowercase;
+    display: none;
+}
+
+x-frame img {
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100%;
+}
+
+svg[onload] {
+    display: none;
+}
+
+.m-body {
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+x-article {
+    display: block;
+    padding: 80px 25px;
+}
+
+.cp {
+    text-transform: capitalize;
+}
+
+pr-item {
+    display: block;
+    margin: 35px 20px;
+}
+
+x-game {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+    width: 60px;
+    width: min-content;
+    border-: 1px solid hsl(47, 100%, 50%);
+    padding: 2px;
+    position: relative;
+}
+
+xg-icon {
+    width: 10vw;
+    height: 10vw;
+    min-width: 65px;
+    min-height: 65px;
+    max-width: 115px;
+    max-height: 115px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    border: 2px solid hsl(47, 100%, 50%);
+    background: hsl(47, 100%, 90%);
+}
+
+x-game:hover {
+    z-index: 0;
+    box-shadow: 0 0 12px -2px hsla(0, 0%, 0%, 0.3);
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+xg-icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+xg-name {
+    text-align: center;
+    display: block;
+    width-: min-content;
+    font-size: 15px;
+    font-size: 14px;
+    word-break-: break-word;
+    overflow-wrap-: anywhere;
+    color: hsl(47, 100%, 45%);
+}
+
+.cp.text {
+    /* background: red; */
+    display: inline-block;
+    box-shadow: inset 0 -10px hsl(47, 100%, 50%);
+}
+
+pr-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+pr-wrap h1 {
+    display-: flex;
+    width: fit-content;
+}
+
+pr-wrap:nth-child(even) {
+    align-items: flex-end;
+    margin: 15px 0;
+}
+
+pr-wrap:nth-child(even) pr-item {
+    text-align: end;
+    justify-: right;
+}
+
+menu#pr {
+    display: flex;
+    background: hsla(47, 100%, 69%, 1);
+    color: white;
+    font-size: 13px;
+    text-shadow: 0 0 1px hsl(0, 0%, 62%);
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 170px;
+    backdrop-filter-: blur(5px);
+    box-shadow: inset 0 0 5px hsl(0, 0%, 100%), 0 0 10px 4px hsl(47, 100%, 50%);
+}
+
+menu#wrap {
+    border-bottom: 1px solid currentColor;
+}
+
+menu#wrap:nth-last-child(1) {
+    box-shadow: none;
+    border: none;
+}
+
+menu#ch {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu#ch:hover {
+    background: hsla(47, 100%, 65%, 1);
+    box-shadow: inset 5px 0 0 currentColor;
+}
+
+menu svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+    opacity: 90%;
+}
+
+menu#pr.h menu#wrap:nth-child(1) menu#ch:nth-child(1) {
+    background: hsl(0, 0%, 100%);
+    color: hsl(47, 100%, 69%);
+}
+
+menu#pr.h menu#wrap:nth-child(1) menu#ch:nth-child(1):hover {
+    background: hsl(0, 0%, 97%);
+    box-shadow: none;
+}

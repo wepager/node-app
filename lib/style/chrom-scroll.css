@@ -1,0 +1,14 @@
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: lightgray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: darkgray;
+    background-: red;
+}
+
+*::-webkit-scrollbar-corner {
+    background: lightgray;
+}
